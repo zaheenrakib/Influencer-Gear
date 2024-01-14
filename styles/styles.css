@@ -132,13 +132,35 @@ body {
 
 .join-btn {
     background-color: #E02C6D;
+    border: none;
+    padding: 18px;
+    color: #FFF;
+    border-radius: 5px;
+    margin: 0px;
+}
+
+.gear-title {
+    color: var(--primary-color);
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.gear-text {
+    margin: 0px;
+    width: 601px;
+    height: 88px;
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 700;
 }
 
 
 /* start a footer part */
 
 .footer {
-    width: 1440px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
     height: 239px;
     flex-shrink: 0;
     background: #0A0826;
@@ -153,10 +175,17 @@ body {
 
     .nav-bar,
     .header-section,
-    .head-content {
+    .head-content,
+    .gear-section {
         flex-direction: column;
     }
-
+    .gear-section{
+        gap: 10px;
+        flex-direction: column-reverse;
+    }
+    .gear-title{
+        width: 100%;
+    }
     .header-section {
         padding: 0;
         flex-direction: column-reverse;
