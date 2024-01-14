@@ -1,5 +1,127 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root{
-    --primary-color:#3A3A3A;
+body {
+    padding: 40px;
+    font-family: Poppins;
+}
+
+:root {
+    --primary-color: #3A3A3A;
+}
+
+
+/* styles Nav bar In header */
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-title {
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+.nav-ul {
+    display: flex;
+}
+
+.nav-ul li {
+    cursor: pointer;
+    list-style: none;
+    margin: 20px;
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* start head Content */
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.head-title {
+    color: var(--primary-color);
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.head-text {
+    width: 500px;
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 0px;
+}
+
+.head-btn {
+    border: none;
+    border-radius: 41px;
+    background: #E02C6D;
+    padding: 12px 24px;
+    gap: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #FFF;
+}
+
+.head-btn span {
+    padding: 10px;
+}
+
+/* Start Sponsor styles */
+
+.sponsor{
+    margin: 50px;
+}
+
+.sponsor-logo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    /* justify-content: space-between; */
+    padding: 80px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:576px) {
+    body {
+        padding: 0px;
+        /* background-color: red; */
+    }
+
+    .nav-bar,
+    .header-section,
+    .head-content {
+        flex-direction: column;
+    }
+
+    .header-section {
+        padding: 0;
+        flex-direction: column-reverse;
+    }
+
+    .head-content {
+        text-align: center;
+    }
+
+    .head-title {
+        font-size: 35px;
+    }
+
+    /* start sponsor logo */
+    .sponsor-logo{
+        display: grid;
+        grid-template-columns: repeat(4 , 1fr);
+        gap: 5px;
+        margin: 0;
+        padding: 0;
+        height: auto;
+    }
 }
